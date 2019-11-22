@@ -58,3 +58,28 @@ function moveForward(rover){
   }
 }
 
+
+  // movement - "ffflrllfrfllrlf"
+  function commands(movement){
+    for (let i = 0; i<movement.length ; i++ ){
+
+      if (movement.substring(i,i+1) == "f" ){
+        moveForward(rover)
+      }
+      else if (movement.substring(i,i+1) == "r"){
+        turnRight(rover)
+      }
+      else if (movement.substring(i,i+1) == "l"){
+        turnLeft(rover)
+      }
+    }
+
+
+
+}
+
+
+
+
+
+
